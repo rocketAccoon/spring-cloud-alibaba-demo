@@ -126,3 +126,6 @@ modules.xml
 .idea/modules.xml
 .idea/vcs.xml
 build
+mvnw
+mvnw.cmd
+.mvn
