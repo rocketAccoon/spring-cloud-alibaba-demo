@@ -1,0 +1,33 @@
+url:
+  base-url: 192.168.2.213
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        #注册中心地址
+        server-addr: ${url.base-url}
+        username: nacos
+        password: nacos
+      config:
+        #命名空间
+        namespace: ${spring.profiles.active}
+        file-extension: yaml
+        #配置中心地址
+        server-addr: ${url.base-url}
+    gateway:
+      routes:
+        - id: provider
+          uri: lb://provider
+          predicates:
+            - Path=/provider/**
+          # 过滤器
+          filters:
+#            - StripPrefix=1 #转发之前去掉第一层路由
+        - id: customer
+          uri: lb://customer
+          predicates:
+            - Path=/customer/**
+          # 过滤器
+          filters:
+#            - StripPrefix=1 #转发之前去掉第一层路由

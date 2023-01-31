@@ -1,6 +1,8 @@
 # spring-cloud-alibaba-demo
 SpringCloudAlibaba系列demo
 
+> 初始化springboot https://start.aliyun.com
+
 此系列文章的版本选取如下：
 - Spring Cloud 版本：Spring Cloud 2021.0.1
 - Spring Boot 版本：2.6.3
