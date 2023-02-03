@@ -6,14 +6,17 @@ spring:
     nacos:
       discovery:
         #注册中心地址
-        server-addr: ${url.base-url}
-        username: nacos
-        password: nacos
+        server-addr: ${url.base-url}:8848
       config:
-        #命名空间
-        namespace: ${spring.profiles.active}
-        file-extension: yaml
         #配置中心地址
-        server-addr: ${url.base-url}
+        server-addr: ${url.base-url}:8848
   datasource:
     url: jdbc:mysql://${url.base-url}:3306/alibaba?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+
+seata:
+  registry:
+    nacos:
+      server-addr: ${spring.cloud.nacos.discovery.server-addr}
+  config:
+    nacos:
+      server-addr: ${spring.cloud.nacos.config.server-addr}

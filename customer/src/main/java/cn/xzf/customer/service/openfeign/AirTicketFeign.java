@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Component
-@FeignClient(contextId = "provider", value = "provider", path = "/provider/demo")
-public interface ProviderDemoFeign {
-    @GetMapping("/test")
-    String test();
+@FeignClient(contextId = "ticket", value = "provider", path = "/provider/airTicket")
+public interface AirTicketFeign {
+    @GetMapping("/sell")
+    String sellTicket();
 }
