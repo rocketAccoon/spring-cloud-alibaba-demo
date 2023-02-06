@@ -64,7 +64,7 @@ seata:
   tx-service-group: customer-tx-group
   service:
     vgroupMapping:
-      provider-tx-group: default
+      customer-tx-group: default
   config:
     type: nacos
     nacos:
