@@ -11,3 +11,7 @@ SpringCloudAlibaba系列demo
 [Spring Cloud Alibaba系列一：nacos 注册中心](https://blog.csdn.net/u014032410/article/details/125294533)
 
 [Spring Cloud Alibaba系列二：openFeign 实现服务间的通信](https://blog.csdn.net/u014032410/article/details/125310908)
+
+[Spring Cloud Alibaba系列三：集成Gateway实现路由管理](https://blog.csdn.net/u014032410/article/details/128819954)
+
+[Spring Cloud Alibaba系列四：集成 seata 实现分布式事务](https://blog.csdn.net/u014032410/article/details/128870752)
